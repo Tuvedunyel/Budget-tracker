@@ -16,9 +16,29 @@ const Form = () => {
             <Grid item xs={6}>
                 <FormControl fullWidth>
                     <InputLabel>Type</InputLabel>
-                    <Select></Select>
+                    <Select defaultValue="Income">
+                        <MenuItem value="Income">Income</MenuItem>
+                        <MenuItem value="Expense">Expense</MenuItem>
+                    </Select>
                 </FormControl>
             </Grid>
+            <Grid item xs={6}>
+                <FormControl fullWidth>
+                    <InputLabel>Category</InputLabel>
+                    <Select defaultValue="Salary">
+                        <MenuItem value="Salary">Salary</MenuItem>
+                        <MenuItem value="Food">Food</MenuItem>
+                        <MenuItem value="Rent">Rent</MenuItem>
+                    </Select>
+                </FormControl>
+            </Grid>
+            <Grid item xs={6}>
+                <TextField type="number" label="Amount" fullWidth />
+            </Grid>
+            <Grid item xs={6}>
+                <TextField type="date" label="date" fullWidth />
+            </Grid>
+            <Button className={classes.button} variant="outlined" color="primary">Create</Button>
         </Grid>
     );
 };
