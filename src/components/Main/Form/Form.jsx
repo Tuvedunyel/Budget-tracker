@@ -60,7 +60,7 @@ const Form = () => {
       ) {
         return createTransaction();
       } else if (
-        semgnet.isFinal &&
+        segment.isFinal &&
         segment.intent.intent === "cancel_transaction"
       ) {
         return setFormData(initialState);
