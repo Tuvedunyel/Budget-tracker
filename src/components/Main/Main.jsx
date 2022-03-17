@@ -12,7 +12,17 @@ const Main = () => {
                 <Typography align='center' variant='h5'>Total Balance $100</Typography>
                 <Typography variant='subtitle1' style={{ lineHeight: '1.5em', marginTop: '20px' }}>
                     InfoCard
+                    Try saying: Add income for $100 in Category Salary for Monday
                 </Typography>
+                <Divider />
+                {/* From */}
+            </CardContent>
+            <CardContent className={classes.cardContent}>
+                <Grid container spacing={2}>
+                    <Grid item xs={12}>
+                        {/* <List /> */}
+                    </Grid>
+                </Grid>
             </CardContent>
         </Card>
     );
